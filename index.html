@@ -1,0 +1,369 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--seccion de menu-->
+    <div class="contenedor1">
+        <div>
+            <h1>Mi Portafolio</h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="">Start</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <style>
+        /*menu*/
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4fafa;
+        }
+        .contenedor1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+        }
+        .contenedor1 h1 {
+            color: #fff;
+            font-size: 50;
+
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .menu ul li {
+            margin: 0 15px;
+        }
+        .menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .menu ul li a:hover {
+            text-decoration: underline;
+        }
+
+        
+        
+    </style>
+
+    <!--seccion de presentacion-->
+
+    <div class="contenedor2">
+        <div class="presentacion">
+            <h2>Hi, I'm Anthony</h2>
+            <p>I'm a web developer with a passion for creating beautiful and functional websites.</p>
+            <div class="buttoncontact1">
+                <button><a href="">See Projects</a></button>
+                <button><a href="">contact me</a></button>
+            </div>
+        </div>
+        <div class="contenedor-imagen">
+            <img class="imagen-presentacion" src="./imagenes/9189376.webp" alt="">
+        </div>
+    </div>
+
+    <style>
+            /*contenedor2*/
+        .contenedor2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 40px;
+        }
+        .presentacion {
+            max-width: 600px;
+            color: #333;
+            text-align: left;
+        }
+        .presentacion h2 {
+            font-size: 100px;
+            margin-bottom: 20px;
+        }
+        .presentacion p {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        .button {
+            display: flex;
+            gap: 20px;
+        }
+        .button button {
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button button a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .button button:hover {
+            background-color: #004d40;
+        }
+        .contenedor-imagen {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .imagen-presentacion {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        .buttoncontact1 {
+            gap: 20px;
+            margin-top: 20px;
+            color: #001a15;
+        }
+        .buttoncontact1 button {
+            padding: 10px 20px;
+            background-color: #082c2a;
+            color: #072b24;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .buttoncontact1 button a {
+            color: #1fd1b0;
+            text-decoration: none;
+        }
+
+        /*responsive style*/
+        @media (max-width: 768px) {
+            .contenedor2 {
+                flex-direction: column;
+                align-items: center;
+            }
+            .presentacion {
+                text-align: center;
+            }
+            .button {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+
+    </style>
+
+    <!--seccion de proyectos-->
+
+    <div class="contenedor4">
+        <h1>Projects</h1>
+        <div class="projectos">
+            <div class="projecto1">
+                <img src="./imagenes/Tipos-de-redes.webp" alt="">
+                <h2>Descripcion de proyecto</h2>
+            </div>
+            <div>
+                <img src="./imagenes/el-proceso-de-desarrollo-web.jpg" alt="">
+                <h2>Descripcion del proyecto</h2>
+            </div>
+            <div>
+                <img src="./imagenes/cross-platform-app-dev-2024.webp" alt="">
+                <h2>Descripcion del proyecto</h2>
+            </div>
+        </div>
+        <button><a href="">view Portfolio</a></button>
+    </div>
+
+    <style>
+        /*contenedor4*/
+        .contenedor4 {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0  auto;
+            text-align: center;
+        }
+        .contenedor4 h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            color: #333;
+            margin-bottom: 50px;
+        }
+        .projectos {
+            display: flex;
+            display: wrap;
+            justify-content: center;
+            gap: 20px
+        }
+        .projectos div {
+            flex: 1;
+            max-width: 300px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(red, green, blue, alpha);
+            overflow: hidden;
+            transition: transform 0.3s;
+            margin: 0 40;
+            box-shadow: #333 0px 5px 15px;
+        }
+        .projectos div:hover {
+            transform: scale(1.05);
+
+        }
+        .projectos img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #00796b;
+        }
+        .projectos h2{
+            font-size: 20px;
+            padding: 10px;
+            color: #333;
+        }
+        .contenedor4 button{
+            padding: 10px 20px;
+            background-color:#001a15 ;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 40px;
+            border: solid 2px #004d40;
+         } 
+         .contenedor4 button a{
+            color: #00796b;
+            text-decoration: none;
+         }
+        
+        .projectos button:hover {
+            background-color: #004d40;
+         }
+         @media (max-width: 780px) {
+            .projectos{
+                flex-direction: column;
+                align-items: center;
+            }
+            .projectos div {
+                max-width: 100%;
+                margin-bottom: 20px;
+
+            }
+         }
+
+
+ 
+        
+  
+    </style>
+
+    <!--seccion de contacto-footer-->
+
+    <div class="contenedor5">
+        <h1>Contact</h1>
+        <h2>Available for new projects and opportunities</h2>
+        <div class="contactfooter">
+            <table class="table" align="center">
+                <tr>
+                  <td>
+                    <img src="/imagenes/pngwing.com (1).png">
+                  </td>
+                  <td>
+                    <img src="imagenes/pngwing.com (2).png" alt="">
+                  </td>
+                  <td>
+                    <img src="/imagenes/pngwing.com.png">
+                  </td>
+                </tr>
+                <tr>
+                    <td><p>github</p></td>
+                    <td><p>linkedin</p></td>
+                    <td><p>email</p></td>
+                </tr>
+            </table>
+         <p>&copy; 2025 Portfolio AnthonyC.C. Todos los derechos reservados.</p>
+    </div>
+
+    <style>
+        /*contenedor5 footer*/
+        .contenedor5 {
+            padding: 40px 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        .contenedor5 h1 {
+            font-size: 40;
+            margin-bottom: 20px;
+        }
+        .contenedor5 h2 {
+            font-size: 15px;
+            margin-bottom: 40px;
+        }
+        .contactfooter {
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .contactfooter table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+
+        }
+        .contactfooter td {
+            text-align: center;
+            padding: 20px;
+        }
+        .contactfooter img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+
+        }
+        .contactfooter img:hover {
+            transform: scale(1.1);
+        }
+        .contactfooter p{
+            font-size: 16px;
+            color: #ccc;
+        }
+        @media (max-width: 768px) {
+            .contactfooter {
+                flex-direction: column;
+                align-items: center;
+
+            }
+            .contactfooter img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+       
+        
+    </style>
+
+
+</body>
+</html>
